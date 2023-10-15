@@ -74,9 +74,9 @@ def test_arma_lance_torpilles_munitions_epuisees():
     except NoAmmunitionError as e:
         assert str(e) == "No ammunition left"
 
-# Exécution des tests unitaires
-test_arma_lance_missiles_antisurface()
+# Test Unitaire
+test_arma_lance_missiles_antisurface_hors_de_portee()
 test_arma_lance_missiles_antiair()
 test_arma_lance_torpilles()
-test_arma_lance_missiles_antisurface_hors_de_portee()
+
 test_arma_lance_torpilles_munitions_epuisees()
